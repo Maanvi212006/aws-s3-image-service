@@ -120,6 +120,7 @@ aws-s3-image-service/
 ├── docker-compose.yml
 ├── Dockerrun.aws.json
 └── README.md
+```
 
 ## ⚙️ Setup Instructions
 
