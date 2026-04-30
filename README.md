@@ -39,6 +39,9 @@ A full-stack web application that allows users to register, authenticate, and up
 ---
 
 ## 📂 Project Structure
+# Project Structure
+
+```text
 aws-s3-image-service/
 ├── .ci/
 │   └── build-publish.sh
