@@ -120,7 +120,7 @@ aws-s3-image-service/
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+### 1. Clone the repository 
 ```bash
 git clone https://github.com/<your-username>/aws-s3-image-service.git
 cd aws-s3-image-service
