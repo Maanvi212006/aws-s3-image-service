@@ -209,6 +209,17 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>9.22.3</version>        <!-- Compatible with Spring Boot 3.0 -->
+                <extensions>true</extensions>
+                <configuration>
+                    <url>jdbc:postgresql://localhost:5432/postgres</url>   <!-- Change if your DB name is different -->
+                    <user>amigoscode</user>
+                    <password>password</password>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.3.1</version>

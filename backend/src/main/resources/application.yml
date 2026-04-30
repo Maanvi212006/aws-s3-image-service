@@ -43,3 +43,5 @@ spring:
       max-request-size: 10MB
   codec:
     max-in-memory-size: 10MB
+  flyway:
+    repair: true
