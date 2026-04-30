@@ -39,7 +39,6 @@ A full-stack web application that allows users to register, authenticate, and up
 ---
 
 ## 📂 Project Structure
-# Project Structure
 
 ```text
 aws-s3-image-service/
@@ -214,7 +213,7 @@ aws:
     mock: true
 ```
 
-## API Usage Flow
+## 🧪 API Usage Flow
 
 1. Register a user
 2. Login → Receive JWT token
