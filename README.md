@@ -167,3 +167,57 @@ npm run dev
 
 Frontend runs on:
 http://localhost:5173
+
+## 🔐 Authentication & Security
+
+- Implemented **JWT-based authentication** for secure access to APIs  
+- Users can **register and login** to receive a JWT token  
+- All protected endpoints require:
+  ```http
+  Authorization: Bearer <token>
+  ```
+  Integrated Spring Security filter chain with custom JWTAuthenticationFilter
+Passwords are securely stored using hashing (BCrypt)
+
+Unauthorized access returns:
+```bash
+{
+  "message": "Full authentication is required"
+}
+```
+## 🐳 Docker Setup
+PostgreSQL containerized using Docker
+
+Port mapping:
+localhost:5332 → PostgreSQL (5432)
+
+Start container:
+```bash
+docker start postgres
+```
+
+## 🗄️ Database & Migrations
+PostgreSQL used as primary database
+Managed using Flyway
+
+Migration scripts located in:
+backend/src/main/resources/db/migration
+
+## ☁️ AWS S3 Integration
+Upload and retrieve images from S3 bucket
+Configurable via application.yml
+
+Mock mode available for local testing:
+```bash
+aws:
+  s3:
+    mock: true
+```
+
+## API Usage Flow
+
+1. Register a user
+2. Login → Receive JWT token
+3. Add token in headers
+4. Access protected endpoints
+5. Upload / retrieve images
